@@ -11,3 +11,4 @@ La página web de la Librería Triple Peaks es el primer proyecto en el programa
 -	Apilamiento vertical con z-index
 -	Diseño responsivo
 -	Media Querys
+-	https://joseeduardotrevizo.github.io/web_project_homeland/

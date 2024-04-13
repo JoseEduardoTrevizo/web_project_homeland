@@ -201,7 +201,7 @@
   max-width: 460px;
   width: 100%;
 }
-.paragraph {
+.paragraph-cricc {
   font-size: 18px;
   font-weight: 400;
   line-height: 163%;
@@ -211,14 +211,14 @@
   grid-row-end: 4;
   grid-column-start: 2;
 }
-.paragraph__gales_text_creccieth {
+.paragraph-cricc__gales_text_creccieth {
   padding-bottom: 56px;
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
 }
-.paragraph__gales_text {
+.paragraph-cricc__gales_text {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
@@ -250,13 +250,13 @@
     font-size: 42px;
     line-height: 46px;
   }
-  .paragraph__gales_text_creccieth {
+  .paragraph-cricc__gales_text_creccieth {
     padding-bottom: 25px;
     font-size: 16px;
     max-width: 352px;
     width: 100%;
   }
-  .paragraph__gales_text {
+  .paragraph-cricc__gales_text {
     font-size: 16px;
     max-width: 352px;
   }
