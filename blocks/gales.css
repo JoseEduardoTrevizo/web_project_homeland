@@ -1,0 +1,161 @@
+.city-gales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  row-gap: 48px;
+  column-gap: 30px;
+  max-width: 984px;
+  padding-top: 80px;
+}
+.city-gales__title_gales {
+  margin: 0;
+  max-width: 460px;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+}
+.subtitle-gales {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.subtitle-gales__place_artist_gales {
+  margin: 0;
+  font-size: 12px;
+  line-height: 121.3%;
+  font-weight: 400;
+  max-width: 58px;
+  letter-spacing: 0.12em;
+  color: #aaa;
+}
+.subtitle-gales__place_name_warren {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.city-gales__image_gales {
+  max-width: 460px;
+  width: 100%;
+}
+.paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 163%;
+  max-width: 484px;
+  text-align: left;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+.paragraph__gales_text_creccieth {
+  padding-bottom: 56px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
+.paragraph__gales_text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
+.city-gales__link {
+  background-color: #0278fe;
+  color: #fff;
+  border-radius: 4px;
+  height: 48px;
+  max-width: 355px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.city-gales__link:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 990px) {
+  .city-gales {
+    max-width: 720px;
+    column-gap: 17px;
+  }
+  .city-gales__title_gales {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .paragraph__gales_text_creccieth {
+    padding-bottom: 25px;
+    font-size: 16px;
+    max-width: 352px;
+    width: 100%;
+  }
+  .paragraph__gales_text {
+    font-size: 16px;
+    max-width: 352px;
+  }
+  .subtitle-gales__place_artist_gales {
+    line-height: auto;
+  }
+  .city-gales__image_gales {
+    max-width: 340px;
+    width: 100%;
+  }
+  .paragraph {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    max-width: 352px;
+    line-height: 163%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 580px) {
+  .city-gales {
+    padding-top: 16px;
+    display: block;
+    max-width: 320px;
+    align-items: center;
+  }
+  .city-gales__title_gales {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    margin: auto;
+  }
+  .subtitle-gales__place_artist_gales {
+    font-size: 12px;
+    line-height: auto;
+    max-width: 288px;
+    width: 100%;
+    margin: 30px auto 8px;
+  }
+  .subtitle-gales__place_name_warren {
+    max-width: 288px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 auto 0;
+    text-align: left;
+  }
+  .city-gales__image_gales {
+    max-width: 320px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+  .paragraph {
+    max-width: 288px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+    margin: auto;
+  }
+  .city-gales__link {
+    max-width: 288px;
+    font-size: 14px;
+    margin: 8px 16px 0 16px;
+  }
+}

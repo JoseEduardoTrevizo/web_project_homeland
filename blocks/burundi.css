@@ -1,0 +1,183 @@
+.city-burundi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  row-gap: 17px;
+  column-gap: 17px;
+  max-width: 984px;
+  padding-top: 80px;
+}
+.city-burundi__title_burundi {
+  margin: 0;
+  max-width: 584px;
+  grid-column: 1/3;
+  grid-row: 1;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+}
+.subtitle-burundi {
+  display: flex;
+  max-width: 456px;
+  flex-direction: column;
+  justify-content: end;
+  grid-column: 2/3;
+  grid-row: 1;
+}
+.subtitle-burundi__place_artist_burundi {
+  margin: 0;
+  font-size: 12px;
+  line-height: 121.3%;
+  font-weight: 400;
+  max-width: 58px;
+  letter-spacing: 0.12em;
+  color: #aaa;
+}
+.subtitle-burundi__place_name_grevisse {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.city-burundi__images_burundi {
+  max-width: 460px;
+  width: 100%;
+  padding-top: 31px;
+}
+.paragraph-burundi {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 163%;
+  max-width: 484px;
+  padding-top: 31px;
+  text-align: left;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+}
+.paragraph-burundi__burundi_text_burundi {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
+.paragraph-burundi__burundi_text {
+  margin: 0;
+  padding-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+}
+.city-burundi__link {
+  background-color: #0278fe;
+  color: #fff;
+  margin-bottom: 60px;
+  border-radius: 4px;
+  height: 48px;
+  max-width: 355px;
+  width: 100%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.city-burundi__link:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 990px) {
+  .city-burundi {
+    max-width: 720px;
+    column-gap: 17px;
+    padding-top: 25px;
+  }
+  .city-burundi__title_burundi {
+    max-width: 340px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .paragraph-burundi__burundi_text_burundi {
+    font-size: 16px;
+    max-width: 352px;
+    width: 100%;
+  }
+  .paragraph-burundi__burundi_text {
+    font-size: 16px;
+    max-width: 352px;
+    padding-top: 11px;
+  }
+  .subtitle-burundi__place_artist_burundi {
+    line-height: auto;
+  }
+  .city-burundi__images_burundi {
+    max-width: 340px;
+    width: 100%;
+    max-height: 340px;
+    height: 100%;
+  }
+  .paragraph-burundi {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    max-width: 352px;
+    line-height: 1.6px;
+    text-align: left;
+    padding-top: 11px;
+  }
+  .city-burundi__link {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .city-burundi {
+    padding-top: 17px;
+    display: block;
+    max-width: 320px;
+    align-items: center;
+  }
+  .city-burundi__title_burundi {
+    max-width: 288px;
+    font-size: 32px;
+    line-height: 35px;
+    margin: auto;
+  }
+  .subtitle-burundi {
+    padding-bottom: 8px;
+  }
+  .subtitle-burundi__place_artist_burundi {
+    font-size: 12px;
+    line-height: auto;
+    max-width: 288px;
+    width: 100%;
+    margin: 0 auto 8px;
+    padding-top: 30px;
+  }
+  .subtitle-burundi__place_name_grevisse {
+    max-width: 288px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 auto 0;
+    text-align: left;
+  }
+  .city-burundi__images_burundi {
+    max-width: 320px;
+    padding-top: 0;
+  }
+  .paragraph-burundi {
+    max-width: 288px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+    margin: auto;
+    padding-top: 30px;
+  }
+  .paragraph-burundi__burundi_text_burundi {
+    padding-top: 25px;
+  }
+  .city-burundi__link {
+    max-width: 288px;
+    font-size: 14px;
+    margin: 8px 16px 0 16px;
+  }
+}

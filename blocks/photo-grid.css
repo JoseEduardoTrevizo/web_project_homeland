@@ -1,0 +1,129 @@
+.photo-grid {
+  margin: auto;
+  max-width: 1184px;
+  display: grid;
+  gap: 16px;
+  padding-top: 92px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8";
+}
+.photo-grid__coast {
+  grid-area: img1;
+}
+.photo-grid__gales {
+  grid-area: img2;
+}
+.photo-grid__church {
+  grid-area: img3;
+}
+.photo-grid__kiev {
+  grid-area: img4;
+}
+.photo-grid__meadow {
+  grid-area: img5;
+}
+.photo-grid__park {
+  grid-area: img6;
+}
+.photo-grid__house {
+  grid-area: img7;
+}
+.photo-grid__twon {
+  grid-area: img8;
+}
+@media screen and (max-width: 1190px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-width: 720px;
+    grid-template-areas:
+      "img1 img2"
+      "img3 img4"
+      "img5 img6"
+      "img7 img8";
+  }
+  .photo-grid__coast {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__gales {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__church {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__kiev {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__meadow {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__park {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__house {
+    max-width: 352px;
+    width: 100%;
+  }
+  .photo-grid__twon {
+    max-width: 352px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 585px) {
+  .photo-grid {
+    padding-top: 38px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    max-width: 288px;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6"
+      "img7"
+      "img8";
+  }
+  .photo-grid__coast {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__gales {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__church {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__kiev {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__meadow {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__park {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__house {
+    max-width: 288px;
+    width: 100%;
+  }
+  .photo-grid__twon {
+    max-width: 288px;
+    width: 100%;
+  }
+}
