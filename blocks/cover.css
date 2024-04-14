@@ -57,6 +57,12 @@
 .cover__buton:hover + .cover__background {
   opacity: 0.5;
 }
+.cover__title:hover ~ .cover__background {
+  opacity: 0.8;
+}
+.cover__subtitle:hover ~ .cover__background {
+  opacity: 0.8;
+}
 .cover__buton:hover {
   background-color: #0063d2;
 }
