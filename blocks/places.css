@@ -10,7 +10,7 @@
   max-width: 984px;
   padding-top: 92px;
 }
-.city__title_kiev {
+.city__title {
   margin: 0;
   max-width: 460px;
   font-size: 72px;
@@ -21,8 +21,10 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
+  grid-column: 2/3;
+  grid-row: 1;
 }
-.subtitle__place_artist_kiev {
+.subtitle__place_artist {
   margin: 0;
   padding-bottom: 8px;
   font-size: 12px;
@@ -32,16 +34,15 @@
   letter-spacing: 0.12em;
   color: #aaa;
 }
-.subtitle__place_name_natalia {
+.subtitle__place_name_author {
   margin: 0;
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
 }
-.city__image_kiev {
+.city__image {
   max-width: 460px;
   width: 100%;
-  padding-top: 31px;
 }
 .paragraph {
   font-size: 18px;
@@ -49,21 +50,27 @@
   line-height: 1.6;
   max-width: 484px;
   text-align: left;
+  grid-row: 2/4;
+  grid-column: 2;
 }
-.paragraph__place_text_ucrania {
+.paragraph__place_text_intro {
   padding-bottom: 25px;
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
 }
-.paragraph__place_text_kiev {
+.paragraph__place_text {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
+  padding-bottom: 25px;
 }
-.city__link_kiev {
+.paragraph__place_text:last-of-type {
+  padding-bottom: 0;
+}
+.city__link {
   background-color: #0278fe;
   display: flex;
   color: #fff;
@@ -76,271 +83,8 @@
   align-items: center;
   text-decoration: none;
 }
-.city__link_kiev:hover {
+.city__link:hover {
   opacity: 0.5;
-}
-@media screen and (max-width: 990px) {
-  .places {
-    padding-top: 88px;
-  }
-  .city {
-    max-width: 720px;
-    row-gap: 24px;
-    column-gap: 17px;
-  }
-  .city__title_kiev {
-    max-width: 340px;
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .subtitle {
-    max-width: 295px;
-    padding-bottom: 0px;
-  }
-  .paragraph__place_text_ucrania {
-    font-size: 16px;
-    max-width: 352px;
-    width: 100%;
-  }
-  .paragraph__place_text_kiev {
-    font-size: 16px;
-    max-width: 352px;
-  }
-  .subtitle__place_artist_kiev {
-    line-height: 1.21px;
-    padding-bottom: 8px;
-  }
-  .city__image_kiev {
-    max-width: 340px;
-    width: 100%;
-    padding-bottom: 24px;
-    padding-top: 31px;
-  }
-  .paragraph {
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    max-width: 352px;
-    line-height: 1.6;
-    text-align: left;
-    padding-top: 0px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .places {
-    padding-top: 62px;
-  }
-  .city {
-    display: block;
-    max-width: 320px;
-    align-items: center;
-    padding-top: 62px;
-  }
-  .city__title_kiev {
-    max-width: 288px;
-    font-size: 32px;
-    line-height: 35px;
-    margin: auto;
-  }
-  .subtitle__place_artist_kiev {
-    font-size: 12px;
-    max-width: 288px;
-    width: 100%;
-    margin: 30px auto 8px;
-  }
-  .subtitle__place_name_natalia {
-    max-width: 288px;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0 auto 0;
-  }
-  .city__image_kiev {
-    max-width: 320px;
-  }
-  .paragraph {
-    max-width: 288px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 163%;
-    margin: auto;
-  }
-  .city__link_kiev {
-    max-width: 288px;
-    font-size: 14px;
-    margin: 8px 16px 0 16px;
-  }
-}
-.city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  row-gap: 48px;
-  column-gap: 30px;
-  max-width: 984px;
-  padding-top: 80px;
-}
-.city__title_gales {
-  margin: 0;
-  max-width: 460px;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 76px;
-}
-.subtitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-.subtitle__place_artist_gales {
-  margin: 0;
-  font-size: 12px;
-  line-height: 121.3%;
-  font-weight: 400;
-  max-width: 58px;
-  letter-spacing: 0.12em;
-  color: #aaa;
-}
-.subtitle__place_name_warren {
-  margin: 0;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400;
-}
-.city__image_gales {
-  max-width: 460px;
-  width: 100%;
-  padding-top: 31px;
-}
-.paragraph {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 163%;
-  max-width: 484px;
-  text-align: left;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-}
-.paragraph__place_text_creccieth {
-  padding-bottom: 56px;
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.paragraph__place_text_gales {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.city__link_gales {
-  background-color: #0278fe;
-  color: #fff;
-  border-radius: 4px;
-  height: 48px;
-  max-width: 355px;
-  width: 100%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.city__link_gales:hover {
-  opacity: 0.5;
-}
-@media screen and (max-width: 990px) {
-  .city {
-    max-width: 720px;
-    column-gap: 17px;
-  }
-  .city__title_gales {
-    max-width: 340px;
-    font-size: 42px;
-    line-height: 46px;
-    padding-top: 8px;
-  }
-  .paragraph__place_text_creccieth {
-    padding-bottom: 25px;
-    font-size: 16px;
-    max-width: 352px;
-    width: 100%;
-  }
-  .paragraph__place_text_gales {
-    font-size: 16px;
-    max-width: 352px;
-  }
-
-  .subtitle__place_artist_gales {
-    line-height: 1.21px;
-    padding-bottom: 8px;
-  }
-  .city__image_gales {
-    max-width: 340px;
-    width: 100%;
-  }
-  .paragraph {
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    max-width: 352px;
-    line-height: 163%;
-    text-align: left;
-  }
-}
-@media screen and (max-width: 580px) {
-  .city {
-    padding-top: 16px;
-    display: block;
-    max-width: 320px;
-    align-items: center;
-  }
-  .city__title_gales {
-    max-width: 288px;
-    font-size: 32px;
-    line-height: 35px;
-    margin: auto;
-  }
-  .subtitle__place_artist_gales {
-    font-size: 12px;
-    max-width: 288px;
-    width: 100%;
-    margin: 30px auto 8px;
-  }
-  .subtitle__place_name_warren {
-    max-width: 288px;
-    width: 100%;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0 auto 0;
-    text-align: left;
-  }
-  .city__image_gales {
-    max-width: 320px;
-    margin-bottom: 16px;
-  }
-  .paragraph {
-    max-width: 288px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 163%;
-    margin: auto;
-  }
-  .city__link_gales {
-    max-width: 288px;
-    font-size: 14px;
-    margin: 8px 16px 0 16px;
-  }
-}
-.city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  row-gap: 17px;
-  column-gap: 30px;
-  max-width: 984px;
-  padding-top: 35px;
 }
 .city__title_berea {
   margin: 0;
@@ -351,507 +95,92 @@
   font-weight: 900;
   line-height: 76px;
 }
-.subtitle {
-  display: flex;
-  max-width: 456px;
-  flex-direction: column;
-  justify-content: end;
-  grid-column: 2/3;
-  grid-row: 1;
-}
-.subtitle__place_artist_berea {
-  margin: 0;
-  font-size: 12px;
-  line-height: 121.3%;
-  font-weight: 400;
-  max-width: 58px;
-  letter-spacing: 0.12em;
-  color: #aaa;
-}
-.subtitle__place_name_travis {
-  margin: 0;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400;
-}
-.city__image_berea {
-  max-width: 460px;
-  width: 100%;
-  padding-top: 31px;
-}
-.paragraph {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 163%;
-  max-width: 484px;
-  text-align: left;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-}
-.paragraph__place_text_usa {
-  padding-bottom: 17px;
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.paragraph__place_text_berea {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.city__link_berea {
-  background-color: #0278fe;
-  color: #fff;
-  margin-top: 31px;
-  border-radius: 4px;
-  height: 48px;
-  max-width: 355px;
-  width: 100%;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.city__link_berea:hover {
-  opacity: 0.5;
-}
 @media screen and (max-width: 990px) {
+  .places {
+    padding-top: 88px;
+  }
   .city {
     max-width: 720px;
+    row-gap: 24px;
     column-gap: 17px;
-  }
-  .city__title_berea {
-    max-width: 340px;
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .paragraph__place_text_usa {
-    padding-bottom: 20px;
-    font-size: 16px;
-    max-width: 352px;
-    width: 100%;
-  }
-  .paragraph__place_text_berea {
-    font-size: 16px;
-    max-width: 352px;
-  }
-  .subtitle {
-    text-align: start;
-  }
-  .subtitle__place_artist_berea {
-    line-height: 1.21px;
-    padding-bottom: 8px;
-  }
-  .city__image_berea {
-    max-width: 340px;
-    width: 100%;
-    padding-top: 17px;
-  }
-  .paragraph {
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    max-width: 352px;
-    line-height: 1.6px;
-    text-align: left;
     padding-top: 0;
+    padding-bottom: 31px;
   }
-}
-@media screen and (max-width: 580px) {
-  .city {
-    padding-top: 36px;
-    display: block;
-    max-width: 320px;
-    align-items: center;
-  }
-  .city__title_berea {
-    max-width: 288px;
-    font-size: 32px;
-    line-height: 35px;
-    margin: auto;
-  }
-  .subtitle {
-    padding-bottom: 30px;
-  }
-  .subtitle__place_artist_berea {
-    font-size: 12px;
-    max-width: 288px;
-    width: 100%;
-    margin: 0 auto 8px;
-    padding-top: 20px;
-  }
-  .subtitle__place_name_travis {
-    max-width: 288px;
-    width: 100%;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0 auto 0;
-    text-align: left;
-  }
-  .city__image_berea {
-    max-width: 320px;
-    margin-bottom: 8px;
-  }
-  .paragraph {
-    max-width: 288px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 163%;
-    margin: auto;
-  }
-  .city__link_berea {
-    max-width: 288px;
-    font-size: 14px;
-    margin: 8px 16px 0 16px;
-  }
-}
-.city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  row-gap: 17px;
-  column-gap: 17px;
-  max-width: 984px;
-  padding-top: 80px;
-}
-.city__title_burundi {
-  margin: 0;
-  max-width: 584px;
-  grid-column: 1/3;
-  grid-row: 1;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 76px;
-}
-.subtitle {
-  display: flex;
-  max-width: 456px;
-  flex-direction: column;
-  justify-content: end;
-  grid-column: 2/3;
-  grid-row: 1;
-}
-.subtitle__place_artist_burundi {
-  margin: 0;
-  font-size: 12px;
-  line-height: 121.3%;
-  font-weight: 400;
-  max-width: 58px;
-  letter-spacing: 0.12em;
-  color: #aaa;
-}
-.subtitle__place_name_grevisse {
-  margin: 0;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400;
-}
-.city__image_burundi {
-  max-width: 460px;
-  width: 100%;
-  padding-top: 31px;
-}
-.paragraph {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 163%;
-  max-width: 484px;
-  padding-top: 31px;
-  text-align: left;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-}
-.paragraph__place_text_burundi {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.paragraph__place_text_muramvya {
-  margin: 0;
-  padding-top: 25px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 163%;
-}
-.city__link_burundi {
-  background-color: #0278fe;
-  color: #fff;
-  margin-bottom: 60px;
-  border-radius: 4px;
-  height: 48px;
-  max-width: 355px;
-  width: 100%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.city__link_burundi:hover {
-  opacity: 0.5;
-}
-@media screen and (max-width: 990px) {
-  .city {
-    max-width: 720px;
-    column-gap: 17px;
-    padding-top: 25px;
-  }
-  .city__title_burundi {
-    max-width: 340px;
-    font-size: 42px;
-    line-height: 46px;
-  }
-  .paragraph__place_text_burundi {
-    font-size: 16px;
-    max-width: 352px;
-    width: 100%;
-  }
-  .paragraph__place_text_muramvya {
-    font-size: 16px;
-    max-width: 352px;
-    padding-top: 11px;
-  }
-  .subtitle {
+  .city:last-of-type {
     padding-bottom: 0;
   }
-  .subtitle__place_artist_burundi {
-    line-height: 1.21px;
-    padding-bottom: 8px;
-  }
-  .city__image_burundi {
-    max-width: 340px;
-    width: 100%;
-    max-height: 340px;
-    height: 100%;
-  }
-  .paragraph {
-    grid-row-start: 2;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    max-width: 352px;
-    line-height: 1.6px;
-    text-align: left;
-  }
-  .city__link_burundi {
-    margin-top: 48px;
-  }
-}
-@media screen and (max-width: 580px) {
-  .city {
-    padding-top: 17px;
-    display: block;
-    max-width: 320px;
-    align-items: center;
-  }
-  .city__title_burundi {
-    max-width: 288px;
-    font-size: 32px;
-    line-height: 35px;
-    margin: auto;
-  }
-  .subtitle {
-    padding-bottom: 8px;
-  }
-  .subtitle__place_artist_burundi {
-    font-size: 12px;
-    max-width: 288px;
-    width: 100%;
-    margin: 0 auto 8px;
-    padding-top: 30px;
-  }
-  .subtitle__place_name_grevisse {
-    max-width: 288px;
-    width: 100%;
-    font-size: 18px;
-    line-height: 22px;
-    margin: 0 auto 0;
-    text-align: left;
-  }
-  .city__image_burundi {
-    max-width: 320px;
-    padding-top: 0;
-  }
-  .paragraph {
-    max-width: 288px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 163%;
-    margin: auto;
-    padding-top: 30px;
-  }
-  .paragraph__place_text_burundi {
-    padding-top: 25px;
-  }
-  .city__link_burundi {
-    max-width: 288px;
-    font-size: 14px;
-    margin: 8px 16px 14px 16px;
-  }
-}
-.city {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: auto;
-  row-gap: 17px;
-  column-gap: 30px;
-  max-width: 984px;
-  padding-top: 35px;
-}
-.city__title_cuauh {
-  margin: 0;
-  max-width: 584px;
-  grid-column: 1/3;
-  grid-row: 1;
-  font-size: 72px;
-  font-weight: 900;
-  line-height: 76px;
-}
-.subtitle {
-  display: flex;
-  max-width: 456px;
-  flex-direction: column;
-  justify-content: end;
-  grid-column: 2/3;
-  grid-row: 1;
-  padding-bottom: 10px;
-}
-.subtitle__place_artist_cuauh {
-  margin: 0;
-  font-size: 12px;
-  line-height: 121.3%;
-  font-weight: 400;
-  max-width: 58px;
-  letter-spacing: 0.12em;
-  color: #aaa;
-}
-.subtitle__place_name_trevizo {
-  margin: 0;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400;
-}
-.city__images_cuauh {
-  max-width: 460px;
-  width: 100%;
-  padding-top: 31px;
-}
-.paragraph {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 163%;
-  max-width: 484px;
-  text-align: left;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  grid-column-start: 2;
-}
-.paragraph__place_text_chih {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-}
-.paragraph__place_text_cuauh {
-  margin: 0;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  padding-top: 15px;
-}
-.city__link_cuauh {
-  background-color: #0278fe;
-  color: #fff;
-  margin-top: 31px;
-  border-radius: 4px;
-  height: 48px;
-  max-width: 355px;
-  width: 100%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.city__link_cuauh:hover {
-  opacity: 0.5;
-}
-@media screen and (max-width: 990px) {
-  .city {
-    max-width: 720px;
-    column-gap: 17px;
-  }
-  .city__title_cuauh {
+  .city__title {
     max-width: 340px;
     font-size: 42px;
     line-height: 46px;
   }
-  .paragraph__place_text_chih {
-    font-size: 16px;
-    max-width: 352px;
-    width: 100%;
-  }
-  .paragraph__place_text_cuauh {
-    font-size: 16px;
-    max-width: 352px;
-  }
-  .subtitle__place_artist_cuauh {
-    line-height: 1.21px;
-    padding-bottom: 8px;
-  }
-  .city__images_cuauh {
-    max-width: 340px;
-    width: 100%;
+  .subtitle {
+    max-width: 295px;
+    padding-bottom: 0px;
   }
   .paragraph {
     grid-row-start: 2;
     grid-row-end: 5;
     grid-column-start: 2;
     max-width: 352px;
-    line-height: 1.6px;
+    line-height: 1.6;
     text-align: left;
+    padding-top: 7px;
+  }
+  .paragraph__place_text_intro {
+    font-size: 16px;
+    max-width: 352px;
+    width: 100%;
+  }
+  .paragraph__place_text {
+    font-size: 16px;
+    max-width: 352px;
+  }
+  .subtitle__place_artist {
+    line-height: 1.21px;
+    padding-bottom: 8px;
+  }
+  .city__image {
+    max-width: 340px;
+    width: 100%;
+    padding-bottom: 24px;
+    padding-top: 31px;
   }
 }
 @media screen and (max-width: 580px) {
+  .places {
+    padding-top: 62px;
+  }
   .city {
-    padding-top: 36px;
     display: block;
     max-width: 320px;
     align-items: center;
+    padding-top: 62px;
   }
-  .city__title_cuauh {
+  .city__title {
     max-width: 288px;
     font-size: 32px;
     line-height: 35px;
     margin: auto;
   }
   .subtitle {
-    padding-bottom: 30px;
+    display: flex;
+    margin: auto;
   }
-  .subtitle__place_artist_cuauh {
+  .subtitle__place_artist {
+    display: flex;
     font-size: 12px;
-    line-height: 1.21px;
     max-width: 288px;
     width: 100%;
-    margin: 0 auto 8px;
-    padding-top: 20px;
+    margin: 30px auto 8px;
   }
-  .subtitle__place_name_trevizo {
+  .subtitle__place_name_author {
     max-width: 288px;
-    width: 100%;
     font-size: 18px;
     line-height: 22px;
-    margin: 0 auto 0;
-    text-align: left;
   }
-  .city__images_cuauh {
+  .city__image {
     max-width: 320px;
-    margin-bottom: 8px;
     padding-top: 0;
   }
   .paragraph {
@@ -861,7 +190,7 @@
     line-height: 163%;
     margin: auto;
   }
-  .city__link_cuauh {
+  .city__link {
     max-width: 288px;
     font-size: 14px;
     margin: 8px 16px 0 16px;
